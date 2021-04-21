@@ -1,0 +1,16 @@
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Profile Picture</th>
+        <th>Create_at</th>
+    </tr>
+        <% @users.each do |user| %>
+        <tr>
+            <td><%= user.name %></td>
+            <td><%= image_tag user.profile_picture %></td>
+            <td><%=  %></td>
+        </tr>
+        <% end %>
+
+</table>
+

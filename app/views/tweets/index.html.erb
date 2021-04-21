@@ -1,0 +1,11 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Tweets</h1>
+
+<% if current_user  %>
+  <%= render 'form', tweet: @tweet %>
+<% end %>
+
+  <%= render 'shared/content_tweet' %>
+
+  <%= link_to 'New Tweet', new_tweet_path %>
